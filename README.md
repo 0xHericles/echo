@@ -10,10 +10,11 @@ ECHO was born out of a simple observation: as agents become more autonomous, hum
 
 It monitors system states, project logs, and internal agent transitions to generate a distilled "Strategic Timeline."
 
-## 🛠️ Features (v0.1.0)
-- **Event-Centric Database**: Structured SQLite storage for high-signal occurrences.
-- **Heuristic Engine**: Logic to classify events into `pivot`, `achievement`, `maintenance`, or `alert`.
-- **Narrative Formatting**: Transforms raw data into human-readable strategic stories.
+## 🛠️ Features (v0.2.0)
+- **OpenTelemetry Native**: Ingests OTel spans and traces using OTLP standards.
+- **Event-Centric Database**: Structured SQLite storage for high-signal occurrences with trace correlation.
+- **Heuristic Engine**: Logic to classify OTel spans into `pivot`, `achievement`, `maintenance`, or `alert`.
+- **Universal Agnosticism**: Works with any agent stack (Python, TS, Go) that supports OTel.
 
 ## 📦 Setup
 ```bash
